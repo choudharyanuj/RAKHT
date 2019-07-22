@@ -1,0 +1,144 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="one.css">
+<link rel="shortcut icon" href="fav.png" type="image/png">
+<title>Orginasation Registration Form</title>
+
+</head>
+ 
+<body>
+	<center>
+	<h3>ORGANISATION REGISTRATION FORM</h3>	
+	</center>
+
+
+<form onsubmit="return check(this);" action="http://localhost/Project/insertorg.php" method="POST"> 
+<table align="center" cellpadding = "10">
+ 
+
+<tr>
+<td>ORGANISATION NAME :</td>
+<td><input type="text" name="Org_Name" pattern="([a-zA-Z]+[a-zA-Z\s]+){3,}" maxlength="30" required />
+(max 30 characters a-z and A-Z)
+</td>
+</tr>
+
+<tr>
+<td>EMAIL ID :</td>
+<td><input type="EMAIL" name="Email_Id" maxlength="100" required /></td>
+</tr>
+<tr>
+<td>MOBILE NUMBER :</td>
+<td>
+<input type="text" name="Mobile_Number" pattern="[0-9]{10}" maxlength="10" required />
+(10 digit number)
+</td>
+</tr>
+<tr>
+<td> Fill available units per each blood group below :</td>
+</tr>
+<td>A+ :</td>
+<td><input type="text" name="ap" pattern="[0-9]{1,}" maxlength="1000000" required />
+</td>
+<tr>
+<td>A- :</td>
+<td><input type="text" name="an" pattern="[0-9]{1,}" maxlength="1000000" required />
+</tr>
+</td>
+<tr>
+<td>B+ :</td>
+<td><input type="text" name="bp" pattern="[0-9]{1,}" maxlength="1000000" required />
+</tr>
+</td>
+<tr>
+<td>B- :</td>
+<td><input type="text" name="bn" pattern="[0-9]{1,}" maxlength="1000000" required/>
+</tr>
+</td>
+<tr>
+<td>O+ :</td>
+<td><input type="text" name="op" pattern="[0-9]{1,}" maxlength="1000000" required/>
+</tr>
+</td>
+<tr>
+<td>O- :</td>
+<td><input type="text" name="on" pattern="[0-9]{1,}" maxlength="1000000" required/>
+</tr>
+</td>
+<tr>
+<td>AB+ :</td>
+<td><input type="text" name="abp" pattern="[0-9]{1,}" maxlength="1000000" required/>
+</tr>
+</td>
+<tr>
+<td>AB- :</td>
+<td><input type="text" name="abn" pattern="[0-9]{1,}" maxlength="1000000" required/>
+</tr>
+</td>
+<tr>
+<td>ADDRESS :<br /><br /><br /></td>
+<td><textarea name="Address" rows="4" cols="30" required></textarea></td>
+</tr>
+<tr>
+<td>CITY :</td>
+<td>
+<select id="city" name="city" required>
+<option value="Bhubaneswar">Bhubaneswar</option>
+<option value="Sambalpur">Sambalpur</option>
+<option value="Rourkela">Rourkela</option>
+</td>
+</tr>
+<tr>
+<td>PIN CODE :</td>
+<td><input type="text" name="Pin_Code" pattern="[0-9]{6}" maxlength="6" required/>
+(6 digit number)
+</td>
+</tr>
+<tr>
+<td>STATE :</td>
+<td><input type="text" name="State" value="Odisha" readonly="readonly" />
+</td>
+</tr>
+<tr>
+<td>COUNTRY :</td>
+<td><input type="text" name="Country" value="India" readonly="readonly" /></td>
+</tr>
+<tr>
+	<tr>
+<td>PASSWORD :</td>
+<td><input type="PASSWORD" name="Pass"/></td>
+</tr>
+<tr>
+	<tr>
+<td>CONFIRM PASSWORD :</td>
+<td><input type="PASSWORD" name="Conf_Pass" /></td>
+</tr>
+<tr>
+<td colspan="2" align="center">
+<input type="submit" value="Submit">
+<input type="reset" value="Reset">
+</td>
+</tr>
+</table>
+ 
+</form>
+ 
+</body>
+</html>
+<script type="text/javascript">
+	function check(form)
+	{
+		if(form.Pass.value.length < 6){
+			alert("Error : Password length must be greater than 6 characters.");
+			form.Pass.focus();
+			return false;
+		}
+		if(form.Pass.value != form.Conf_Pass.value){
+			alert("Error : Password & Confirm Password field must contain the same input.");
+			form.Conf_Pass.focus();
+			return false;
+		}
+		alert("Entered details are correct.");
+		return true;
+	}
+</script>

@@ -1,0 +1,105 @@
+<!DOCTYPE html >
+<html >
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="fav.png" type="image/png">
+<title>Search Donor</title>
+<style>
+a:link {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: #00FFBF;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: white;
+  background-color: transparent;
+  text-decoration: underline;
+}
+</style>
+
+</head>
+<body style="background-image:url('home_bg.png'); 
+  background-size: cover;
+  opacity:0.99;">
+<div id="body_wrapper" style="background-color:#e60000">
+
+<div id="wrapper">
+
+    <div id="header">
+        <div id="site_title" style="text-align: center;margin-top: 2%; font-family: jokerman;"><font color="white"; size="200";>RAKHT</font></div>
+    </div> 
+        
+	 <div id="menu">
+            <ul>
+                <li style="float: left; width: 30%; height: 60px; margin: 10px; background-color: #C70039; opacity: 0.8; text-align: center;"><a href="home.html"><h2>Home</h2></a></li>
+                
+                <li style="float: left; width: 30%; height: 60px; margin: 10px; background-color: #C70039; opacity: 0.8; text-align: center;"><a href="searchdonor.html"><h2>Search Donor</h2></a></li>
+                
+                <li style="float: left; width: 30%; height: 60px; margin: 10px; background-color: #C70039; opacity: 0.8; text-align: center;"><a href="aboutus.html"><h2>About Us</h2></a></li>
+                
+            </ul>    	
+        </div> 
+    </div> 
+</div>
+
+<div id="tooplate_middle_subpage">
+    		
+</div>
+<form action="http://localhost/project/donordetails.php" method="POST">  
+<div style=" width: 30%;
+     
+border-radius: 25px;
+margin-top: 200px;    
+margin-left: 480px;
+background-color: #b30000;
+color: #ffffff;
+font-size: 23px;
+   
+padding: 20px;">
+<table allign="center" cellpadding="10px">
+<center>
+ <td>Select Location :</td><td><select id="city" name="city">
+                            <option value="Bhubaneswar">Bhubaneswar</option>
+                            <option value="Sambalpur">Sambalpur</option>
+                            <option value="Rourkela">Rourkela</option>
+    
+</td>
+<tr></tr>
+<td>Select Blood Group :</td><td><select id="bgroup" name="bgroup">
+                                <option value="AP">A+</option>
+                                <option value="BP">B+</option>
+                                <option value="AN">A-</option> 
+                                <option value="BN">B-</option>
+                                <option value="ABP">AB+</option>
+                                <option value="ABN">AB-</option>
+                                <option value="OP">O+</option>
+                                <option value="O_N">O-</option>
+</td>
+</center>
+</table>
+<pre>
+               <input type="submit" value="Search Location"style="background: #30122b;
+ 
+  border-radius: 28px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 27px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;"/>
+</pre>
+
+</form>
+    </div>
+</pre>
+</body>
+</html>

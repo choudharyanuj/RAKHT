@@ -1,0 +1,161 @@
+
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial scale=1.0">
+
+	
+	<link rel="shortcut icon" href="fav.png" type="image/png">
+<title>Rakht</title>
+<style>
+a:link {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: #00FFBF;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: white;
+  background-color: transparent;
+  text-decoration: underline;
+}
+</style>
+</head>
+<body>
+
+	<body style="background-image:url('home_bg.png'); 
+	background-size: cover;
+	opacity:0.9;">
+	<div id="body_wrapper" >
+
+<div id="wrapper">
+	
+    <div id="header">
+        <div id="site_title" style="text-align: center;margin-top: 2%; font-family: jokerman;"><font color="white"; size="200";>RAKHT</font></div>
+        
+	    <div id="menu">
+             <ul style="margin: 0px; padding: 10px; list-style: none;">
+               
+          <li style="float: left; width: 35%; height: 60px; margin: 10px; background-color: #C70039; opacity: 0.8; text-align: center;"><a href="home.html"><h2>Home</h2></a></li>
+                       
+                <li style="float: left; width: 30%; height: 60px; margin: 10px; background-color: #C70039; opacity: 0.8; text-align: center;"><a href="searchdonor.html" target="_top"><h2>Search Donor</h2></a></li>
+                
+                <li style="float: left; width: 30%; height: 60px; margin: 10px; background-color: #C70039; opacity: 0.8; text-align: center;"><a href="aboutus.html" target="_top"><h2>About Us</h2></a></li>
+                
+            </ul>    	
+        </div> 
+    </div> 
+    
+    
+    
+    <div id="main">
+    
+    	<div class="col_allw300" style=" width: 50%;
+   
+   
+border-radius: 2%;
+margin-top: 8%;    
+margin-left: 25%;
+background-color: #b30000;
+color: #ffffff;
+font-size: 23px;
+   
+padding: 20px;">
+        	<h2>Welcome To RAKHT!</h2>
+            <p><em>Give Blood, Give Life</em>
+            </p>
+        
+        <div class="col_allw300">
+        	<h2>Service Overview</h2>
+            <ul class="tooplate_list">
+	            <li><a href="#"></a>Blood Bank</li>
+                <li><a href="#"></a>Donor</li>
+                <li><a href="#"></a>Hospital for blood</li>
+                
+
+            </ul>
+</div>
+         
+<form id='signup' action="Signup.html">
+	 <input type="submit" value="Signup" style="background: #30122b;
+  align: center;
+  border-radius: 10%;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 8px 16px 8px 16px;
+  text-decoration: none;"/>
+
+	</form>	
+
+
+  <div class="col_allw300 col_last" style="margin-left: 60%; margin-top: -45%;" >
+        <h2>Login Here</h2>
+
+
+
+
+<form id='login' action='' method="POST" >
+    
+  <pre>    <input type="Email" name="uname" placeholder="Email Id" required>
+
+    <input type="radio" name="rad"  value="admin" onclick="option(0)" >Admin</option>
+    <input type="radio" name="rad" value="indivisual" onclick="option(1)">Indivisual</option>
+    <input type="radio" name="rad" value="organisation" onclick="option(2)">Organisation</option>
+    <script type="text/javascript">
+      function option(x) {
+        if(x==0){
+          document.getElementById('login').action='http://localhost/project/Logged_admin.php';
+        }
+        if(x==1){
+          document.getElementById('login').action='http://localhost/project/Logged_ind.php';
+        }
+        if(x==2){
+          document.getElementById('login').action='http://localhost/project/Logged_org.php';
+        }
+      }
+    </script>
+  
+    <input type="password" name="pass" placeholder="password" required>
+
+     <input id="login_btn" type="submit" value="Login" style="background: #30122b;
+ 
+  border-radius: 10%;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 8px 16px 8px 16px;
+  text-decoration: none;/>
+</form>
+
+<div class="col_allw300 col_last" style="margin-left: -250px; margin-top: -50px;" >
+       
+
+
+
+
+</pre>	     	 
+
+ 
+
+
+
+
+      
+    
+
+
+</div>  
+	<div class="cleaner"></div>
+</em></div><em> 
+</em></div><em> 
+
+</em></div></body></html>
